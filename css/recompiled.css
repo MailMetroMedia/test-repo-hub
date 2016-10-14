@@ -1,0 +1,824 @@
+@import url(https://fonts.googleapis.com/css?family=Varela+Round);
+@import url(https://fonts.googleapis.com/css?family=Londrina+Outline);
+@font-face {
+  font-family: 'umbrageregular';
+  src: url('../fonts/umbrage2-webfont.eot');
+  src: url('../fonts/umbrage2-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/umbrage2-webfont.woff') format('woff'), url('../fonts/umbrage2-webfont.ttf') format('truetype'), url('../fonts/umbrage2-webfont.svg#umbrageregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+}
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+textarea {
+  resize: vertical;
+}
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+.crocs-title {
+  font-size: 0;
+  background: url('../img/crocs_logo.png') no-repeat;
+  background-size: contain;
+  display: block;
+  height: 49px;
+  width: 80%;
+  position: relative;
+  margin: 3% auto;
+}
+.metro-title {
+  font-size: 0;
+  background: url('../img/metro_logo.png') no-repeat;
+  background-size: contain;
+  display: block;
+  height: 59px;
+  width: 50%;
+  position: relative;
+  margin: 10px auto;
+}
+/* ===== Initializr Styles ==================================================
+   Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
+   ========================================================================== */
+body {
+  font: 62.5%/1 Helvetica, Helvetica Neue, Arial;
+}
+.wrapper {
+  width: 90%;
+  margin: 0 5%;
+  position: relative;
+}
+/* ===================
+    ALL: Orange Theme
+   =================== */
+.header-container {
+  /*   border-bottom: 20px solid #e44d26;*/
+  background-image: url('../img/header-back.jpg');
+  background-size: cover;
+  min-height: 500px;
+  position: relative;
+  background-color: #b8cf60;
+  background-position: center center;
+  background-repeat: no-repeat;
+  border-top: 5px solid #9fde2a;
+  border-bottom: 5px solid #86bb23;
+  box-shadow: inset 0 0 70px rgba(0, 0, 0, 0.3);
+}
+.header-container,
+.footer-container,
+.main aside {
+  /*  background: #f16529;*/
+}
+.title {
+  color: white;
+}
+/* ==============
+    MOBILE: Menu
+   ============== */
+nav {
+  position: relative;
+  top: 25px;
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+nav a {
+  font-family: 'Varela Round', sans-serif;
+  display: block;
+  margin-bottom: 10px;
+  padding: 15px 0;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.3em;
+  text-shadow: 1px -1px 1px #81ad2f;
+  border-top: 1px solid #8EC625;
+  border-bottom: 1px solid #9fde2a;
+  color: white;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#9fde2a+0,86bb23+100 */
+  background: #9fde2a;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #9fde2a 0%, #86bb23 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #9fde2a 0%, #86bb23 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #9fde2a 0%, #86bb23 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#9fde2a', endColorstr='#86bb23', GradientType=0);
+  /* IE6-9 */
+  border-right: 1px solid #86bb23;
+}
+nav ul li:last-child a {
+  border-right: 0;
+}
+nav a:hover,
+nav a:visited {
+  color: white;
+}
+nav a:hover {
+  text-decoration: none;
+  background: #92d613;
+}
+/* ==============
+    MOBILE: Main
+   ============== */
+.main {
+  padding: 30px 0;
+}
+.main article h1 {
+  font-size: 2em;
+}
+.footer-container footer {
+  color: white;
+  padding: 20px 0;
+}
+.footer-container p {
+  font-size: 1.8em;
+  font-family: 'Varela Round', sans-serif;
+}
+.footer-container h3 {
+  font-size: 2em;
+}
+/* ===============
+    ALL: IE Fixes
+   =============== */
+.ie7 .title {
+  padding-top: 20px;
+}
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+html,
+body {
+  width: 100%;
+}
+h2 {
+  text-align: center;
+  font-size: 4em;
+  margin-top: 0;
+  font-family: 'Varela Round', sans-serif;
+}
+.white-box {
+  background-colour: #FFFFFF;
+}
+.white-box h2 {
+  color: #84bc00;
+}
+.blue-box {
+  background-color: #0079a9;
+  overflow: auto;
+}
+.blue-box h2 {
+  color: #ffffff;
+}
+.footer-container {
+  background-color: #84bc00;
+  text-align: center;
+  overflow: auto;
+}
+.footer-container h3 {
+  font-family: 'Varela Round', sans-serif;
+  font-weight: normal;
+  font-size: 2.5em;
+}
+.footer-container h3 span {
+  font-weight: bold;
+}
+.footer-container .contain {
+  overflow: auto;
+  width: 340px;
+  margin: auto;
+}
+.footer-container .contain > a {
+  float: left;
+  padding: 15px;
+  text-decoration: none;
+  color: #ffffff;
+}
+.footer-container .footer-logo {
+  width: 160px;
+  margin: 0 0 10px 0;
+}
+.activities .mainhead {
+  overflow: auto;
+}
+.activities .mainhead h3,
+.activities .mainhead h4 {
+  color: #84bc00;
+}
+.activities .mainhead h3 {
+  font-size: 5em;
+  text-transform: uppercase;
+  font-family: 'umbrageregular';
+  font-weight: normal;
+  margin-top: 0;
+  margin-bottom: 0.25em;
+}
+.activities .mainhead h4 {
+  font-family: 'Varela Round', sans-serif;
+  font-size: 2em;
+  margin-top: 0;
+  font-style: italic;
+  font-weight: 500;
+}
+.activities a {
+  margin-bottom: 10px;
+  overflow: auto;
+  display: block;
+  text-decoration: none;
+  border-top: 2px dotted #ccc9c1;
+}
+.activities a h3 {
+  font-family: 'Varela Round', sans-serif;
+  font-style: italic;
+  text-decoration: none;
+  font-size: 1.6em;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+.activities a h4 {
+  color: #333333;
+  font-family: 'Varela Round', sans-serif;
+  text-decoration: none;
+  font-size: 1.3em;
+  margin-top: 5px;
+}
+.activities a p {
+  color: #333333;
+  font-size: 1.3em;
+  line-height: 1.3;
+}
+.activities a .cta {
+  display: inline-block;
+  background-color: red;
+  padding: 0.5em;
+  font-family: 'Varela Round', sans-serif;
+  color: #eeeeee;
+  font-size: 2em;
+  text-transform: uppercase;
+  margin-top: 0.5em;
+  width: 100%;
+  text-align: center;
+}
+.activities a:hover .cta {
+  transition: 0.2s;
+  color: #ffffff;
+  font-weight: bold;
+}
+.activities a img {
+  width: 55%;
+  height: auto;
+  padding: 0.5em;
+}
+.activities a div {
+  width: 45%;
+  padding: 0.5em;
+}
+.activities a.right > div {
+  float: right;
+}
+.activities a.left > div {
+  float: left;
+}
+.steps {
+  background-color: #e8e5db;
+  border-top: 0;
+  padding: 0;
+  color: #333333;
+}
+.steps p {
+  font-size: 1.3em;
+  line-height: 1.2;
+}
+.steps > h3 {
+  background-color: #c5d8a8;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-family: 'umbrageregular';
+  font-weight: normal;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 10px;
+  font-size: 3em;
+  text-align: center;
+  letter-spacing: 2px;
+}
+.steps > h3 span {
+  font-family: 'Londrina Outline', cursive;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+.steps > h3 span.hash {
+  font-family: Arial;
+}
+.steps ul {
+  background-color: #c5d8a8;
+  color: #fff;
+  margin: 0;
+  padding: 0 10px 10px;
+  overflow: auto;
+}
+.steps ul li {
+  float: left;
+  width: 33.33%;
+  list-style: none;
+  text-align: center;
+  margin-bottom: 4px;
+  font-size: 1.6em;
+}
+.steps .left img {
+  margin-right: 15px;
+  margin-bottom: 5px;
+}
+.steps .right img {
+  margin-left: 15px;
+  margin-bottom: 5px;
+}
+.steps img.store {
+  width: 30%;
+  margin: 0;
+  padding: 3px;
+}
+.steps .item {
+  overflow: auto;
+  padding: 0 10px;
+  margin: 20px 0;
+}
+.steps .item h3 {
+  font-family: 'Londrina Outline', cursive;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #7c99bb;
+  font-size: 3em;
+  margin: 0;
+  text-transform: uppercase;
+}
+.steps img {
+  width: 33.33%;
+  height: auto;
+}
+.green-box {
+  overflow: hidden;
+  padding: 15px 0;
+  background-color: #84bc00;
+}
+.green-box a {
+  text-decoration: none;
+}
+.green-box .box-full {
+  font-family: 'Varela Round', sans-serif;
+  width: 100%;
+  padding: 0 20px;
+  text-align: center;
+  font-size: 2em;
+  color: #333333;
+  font-weight: 600;
+}
+.green-box .box-1 {
+  width: 100%;
+  padding: 0 15px;
+}
+.green-box .box-2 {
+  width: 100%;
+  padding: 0 15px;
+}
+.green-box .box-3 {
+  width: 100%;
+  padding: 0 15px;
+}
+.green-box .smallprint {
+  padding: 0 20px;
+  margin: auto;
+  width: 90%;
+  text-align: center;
+  line-height: 1;
+  font-size: 1.2em;
+  top: 11px;
+  position: relative;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+.green-box .smallprint a {
+  color: #333333;
+  text-decoration: underline;
+}
+.green-box img {
+  width: 100%;
+  height: auto;
+}
+.green-box h3,
+.green-box p {
+  color: #ffffff;
+}
+.green-box h3 {
+  font-family: 'Londrina Outline', cursive;
+  font-weight: 700;
+  letter-spacing: 2px;
+  font-size: 4em;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.green-box p {
+  font-size: 1.4em;
+  line-height: 1.3;
+}
+.green-box .cta {
+  display: inline-block;
+  background-color: red;
+  padding: 0.5em;
+  font-family: 'Varela Round', sans-serif;
+  color: #84bc00;
+  font-size: 2em;
+  text-transform: uppercase;
+  margin-top: 0.5em;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+}
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+@media only screen and (max-width: 480px) {
+  .activities a img,
+  .activities a.right > div,
+  .activities a.left > div {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 480px) {
+  nav {
+    top: 90px;
+  }
+  /* ====================
+    INTERMEDIATE: Menu
+   ==================== */
+  nav a {
+    float: left;
+    width: 33.33%;
+    margin: 0;
+    padding: 10px 2%;
+    margin-bottom: 0;
+  }
+  nav li:first-child a {
+    margin-left: 0;
+  }
+  nav li:last-child a {
+    margin-right: 0;
+  }
+  .crocs-title {
+    display: inline-block;
+    width: 230px;
+    position: absolute;
+    top: 3px;
+    height: 42px;
+  }
+  .metro-title {
+    width: 133px;
+    height: 42px;
+    position: absolute;
+    right: 0;
+    top: 15px;
+    display: inline-block;
+  }
+  /* ========================
+    INTERMEDIATE: IE Fixes
+   ======================== */
+  nav ul li {
+    display: inline;
+  }
+  .oldie nav a {
+    margin: 0 0.7%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  /* ====================
+    WIDE: CSS3 Effects
+   ==================== */
+  .header-container,
+  .main aside {
+    /*      -webkit-box-shadow: 0 5px 10px #aaa;
+           -moz-box-shadow: 0 5px 10px #aaa;
+                box-shadow: 0 5px 10px #aaa;*/
+  }
+  .header-container {
+    background-position: center center;
+  }
+  /* ============
+    WIDE: Menu
+   ============ */
+  .title {
+    float: left;
+  }
+  nav {
+    float: right;
+    width: 48%;
+    position: absolute;
+    left: 32%;
+    top: 0px;
+    overflow: hidden;
+    border-radius: 0 0 15px 15px;
+  }
+  .crocs-title {
+    top: 3px;
+  }
+  .metro-title {
+    top: 20px;
+  }
+  /* ============
+    WIDE: Main
+   ============ */
+  .main article {
+    float: left;
+    width: 57%;
+  }
+  .main aside {
+    float: right;
+    width: 35%;
+  }
+  .green-box {
+    overflow: hidden;
+    padding: 15px 0;
+  }
+  .green-box .box-1 {
+    width: 33.33%;
+    float: left;
+    padding: 0 15px;
+  }
+  .green-box .box-2 {
+    width: 33.33%;
+    float: left;
+  }
+  .green-box .box-3 {
+    width: 33.33%;
+    float: left;
+  }
+  .steps img.store {
+    width: 50%;
+    margin: 0;
+    padding: 3px;
+  }
+  .steps img.store.first {
+    width: 50%;
+    margin: 0;
+    padding: 3px;
+    float: left;
+  }
+}
+@media only screen and (min-width: 970px) {
+  .wrapper {
+    width: 968px;
+    margin: auto;
+  }
+  nav {
+    width: 55%;
+    left: 26%;
+  }
+  nav a {
+    font-size: 1.4em;
+  }
+  .green-box h3 {
+    margin-top: 60px;
+  }
+}
+@media only screen and (min-width: 1140px) {
+  /* ===============
+    Maximal Width
+   =============== */
+  .wrapper {
+    /*       width: 1026px; /* 1140px - 10% for margins */
+    /*margin: 0 auto;*/
+  }
+  .crocs-title {
+    top: 3px;
+  }
+}
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+.hidden {
+  display: none !important;
+  visibility: hidden;
+}
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+.invisible {
+  visibility: hidden;
+}
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+.clearfix {
+  *zoom: 1;
+}
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+@media print {
+  *,
+  *:before,
+  *:after {
+    background: transparent !important;
+    color: #000 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+  a[href^="#"]:after,
+  a[href^="javascript:"]:after {
+    content: "";
+  }
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+  thead {
+    display: table-header-group;
+  }
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+  img {
+    max-width: 100% !important;
+  }
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+@media only screen and (min-width: 480px) {
+  .twitter-tweet {
+    width: 50% !important;
+    float: left;
+    padding: 10px;
+  }
+}
+.twitter-tweet {
+  padding: 10px;
+}
+.mol_header,
+.mol_footer {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  background: #fff;
+  position: relative;
+  z-index: 2;
+}
+.mol_header .inner,
+.mol_footer .inner {
+  padding: 0;
+}
+.mol_header .bg,
+.mol_footer .bg {
+  display: none;
+}
+.mol_header iframe,
+.mol_footer iframe {
+  display: block;
+  margin: 0 auto;
+}
+.mol_header {
+  max-width: 985px;
+  padding-bottom: 10px;
+}
+.mol_header .inner {
+  padding: 0;
+}
+.mol_header .bg {
+  padding-bottom: 18%;
+  background: url(../img/mol_header.jpg) #ffffff no-repeat center top;
+  background-size: cover;
+}
+.mol_footer {
+  margin-top: 10px;
+}
+.mol_footer .bg {
+  padding-bottom: 18%;
+  background: url(../img/mol_footer.jpg) #ffffff no-repeat center top;
+  background-size: cover;
+}
+.mol_footer p {
+  display: none;
+  margin: auto;
+  padding: 30px 0;
+  text-align: center;
+  letter-spacing: -0.5px;
+}
+@media screen and (max-width: 1000px) {
+  .mol_header .inner,
+  .mol_footer .inner {
+    padding: 0 10px;
+  }
+  .mol_header .bg,
+  .mol_footer .bg {
+    display: block;
+  }
+  .mol_header iframe,
+  .mol_footer iframe {
+    display: none;
+  }
+}
+@media screen and (max-width: 667px) {
+  .mol_header {
+    margin-bottom: 0;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 0px;
+  }
+  .mol_header .bg {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin-bottom: 0;
+    padding-bottom: 15%;
+    background-image: url(../img/mol_header_mob.jpg);
+  }
+  .mol_footer {
+    margin-top: 0;
+    background-color: #ddd;
+  }
+  .mol_footer .bg {
+    background: none;
+    margin-top: 0;
+  }
+  .mol_footer p {
+    display: block;
+  }
+}

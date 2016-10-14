@@ -1,0 +1,360 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Crocs | Mail Online Advertising Feature</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <base href="http://creative.dailymail.co.uk/crocs/"> 
+        <link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="css/main.css">
+
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+        
+        
+<!-- MOL Tracking -->
+    <!-- <script src="js/moltracking.js"></script> -->
+    <!-- START === Mail Onine Tracking Code -->
+    <script type="text/javascript">
+    var s_account = 'anddailymailprod';
+
+    DM = {
+        m: {},
+        /**
+         * function registers objects to initialise
+         * @param id: id of the DOM element to initialize
+         * @param type: type of class to use to initialize the DOM element
+         * @param params {}
+         */
+        has: function(id, type, params) {
+            /* for backward compatibility -
+             * some 'has' calls come from content and have only 1 argument, i.e. DM.has('gMap')
+             * so use it as type
+             */
+            type = type || id;
+
+            if (!this.m[type]) {
+                this.m[type] = [];
+            }
+            this.m[type].push({
+                id: id,
+                params: params
+            });
+        },
+        //******************************************************************************************//
+        // File for cookie related fnctions in JavaScript                                                                  //
+        // Author :         Manish Hatwalne (http://www.technofundo.com/)                                     //
+        // Feedback :       feedback@technofundo.com          (for feedback/bugs)                                     //
+        // Created :        19 August 2001                                                                               //
+        // Functions :                                                                                                        //
+        //                (1) setCookie(szName, szValue [,szExpires] [,szPath] [,szDomain] [,szSecure])   //
+        //               (2) getCookie(szName)                                                                               //
+        //               (3) deleteCookie(szName)                                                                       //
+        //                                                                                                                         //
+        // Feel free to use/modify the code in this file, but always keep the header intact.       //
+        // And DO NOT re-distribute this file, instead provide a link to the site                           //
+        // http://www.technofundo.com/. Thank You.                                                                  //
+        //                                                                                                                         //
+        //******************************************************************************************//
+
+        setCookie: function(szName, szValue, szExpires, szPath, szDomain, bSecure) {
+            var szCookieText = escape(szName) + '=' + escape(szValue);
+            szCookieText += (szExpires ? ';expires=' + szExpires.toGMTString() : '');
+            szCookieText += (szPath ? ';path=' + szPath : '');
+            szCookieText += (szDomain ? ';domain=' + szDomain : '');
+            szCookieText += (bSecure ? ';secure' : '');
+
+            document.cookie = szCookieText;
+        },
+
+        getCookie: function(szName) {
+            var szValue = null;
+            if (document.cookie) //only if exists
+            {
+                var arr = document.cookie.split((escape(szName) + '='));
+                if (2 <= arr.length) {
+                    var szValue = unescape(arr[1].split(';')[0]);
+
+                    if (szValue.length > 1 && szValue.charAt(0) == '"' && szValue.charAt(szValue.length - 1) == '"') {
+                        szValue = szValue.substring(1, szValue.length - 1);
+                    }
+                }
+            }
+            return szValue;
+        },
+
+        deleteCookie: function(szName) {
+            var tmp = DM.getCookie(szName);
+            if (tmp) DM.setCookie(szName, tmp, (new Date(1)));
+        },
+
+        popup: function(url, w, h) {
+            var _popupFeatures = "menubar=false,location=false,statusbar=false,toolbar=false,resizable=false",
+                _popupfpFeatures = "resizable=1,scrollbars=1",
+                nw = window.open(url, "_blank", "width=" + w + ",height=" + h + "," + _popupFeatures + "," + _popupfpFeatures);
+            nw.focus();
+            return nw;
+        }
+    }
+    </script>
+    <script type="text/javascript" src="http://creative.dailymail.co.uk/tracking/sc_new_bundle.js"></script>
+    <!-- SiteCatalyst code version: H.20.3.
+	Copyright 1997-2009 Omniture, Inc. More info available at
+	http://www.omniture.com -->
+    <script type="text/javascript">
+    <!--
+    /* You may give each page an identifying name, server, and channel on
+    the next lines. */
+    s15.channel = 'creative.dailymail';
+    s15.pageName = 'htbs/index.html';
+    s15.prop1 = 'adfeatures';
+    s15.prop2 = 'adfeatures';
+    s15.prop3 = '';
+    s15.prop4 = 'advertorial';
+    s15.prop5 = '';
+    s15.prop6 = '';
+    s15.prop7 = '';
+    s15.prop8 = '';
+    s15.prop9 = '';
+    s15.prop10 = '';
+    s15.prop11 = DM.getCookie('authid') ? 'Logged In' : 'Logged Out';
+    s15.prop17 = '';
+    s15.prop18 = '';
+    s15.prop19 = '';
+    s15.prop20 = '';
+    s15.prop21 = DM.getCookie('userid') ? DM.getCookie('userid') : '';
+    s15.prop22 = 'hub_crocs';
+    s15.prop23 = '';
+    s15.prop24 = '';
+    s15.prop25 = '';
+    s15.prop26 = '';
+    s15.prop27 = '';
+    s15.prop28 = '';
+    s15.prop29 = 'www.dailymail.co.uk';
+    s15.prop30 = '';
+
+    s15.products = '';
+    /* Hierarchy Variables */
+    s.hier2 = s15.hier2 = 'dailymail/home';
+    /************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
+    var s15_code = s15.t();
+    if (s15_code) document.write(s15_code);
+    //-->
+    </script>
+    <script type="text/javascript">
+    <!--
+    if (navigator.appVersion.indexOf('MSIE') >= 0) document.write(unescape('%3C') + '\!-' + '-')
+        //-->
+    </script>
+    <!--/DO NOT REMOVE/-->
+    <!-- End SiteCatalyst code version: H.20.3. -->
+    <!--<a href="#" onClick="customLinkTracking()">Custom Link Tracking</a><br><br> -->
+    <script language="JavaScript" type="text/javascript">
+    function customLinkTracking(meaningfulname, linktype) {
+        var s15 = s_gi(s_account),
+            value = meaningfulname;
+        s15.linkTrackVars += ',prop34,eVar32';
+        s15.linkTrackEvents = 'None';
+        s15.eVar32 = s15.prop34 = value;
+        s15.tl(this, linktype, value);
+        s15.linkTrackVars = "prop65,eVar65,eVar50,eVar11";
+    }
+    </script>
+    <!-- END === Mail Onine Tracking Code -->
+        
+    <script src="js/jquery-2.2.3.min.js"></script>    
+    <script src="js/jquery.scrollTo.min.js"></script>   
+        
+    </head>
+    <body>
+        
+        
+      
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        
+    <header class="mol_header">
+        <div class="inner">
+            <div class="bg"></div>
+            <iframe src="http://www.dailymail.co.uk/home/adfeatures/index.html?headeronly=true&amp;decorator=headeronly&amp;omniture=false" width="964" height="180" frameborder="0" scrolling="no" allowtransparency="yes"></iframe>
+        </div>
+    </header>        
+        
+        
+        
+        <div class="header-container">
+            <header class="wrapper clearfix">
+                <h1 class="crocs-title">Crocs</h1>
+                <h2 class="metro-title">Metro</h2>
+                <nav>
+                    <ul> 
+                        <li><a id="sec1" href="#" onClick="customLinkTracking('hub_crocs-1-scroll_to_treasure_hunt','o')">Treasure Hunt</a></li>
+                    
+                        <li><a id="sec2" href="#" onClick="customLinkTracking('hub_crocs-3-scroll_to_social_feeds','o')">Social Feed</a></li>
+                        
+                    </ul>
+                </nav>
+                
+            </header>
+        </div>
+
+        <div class="main-container white-box">
+            <div class="main wrapper clearfix">
+                <h2 id="treasure_hunt">Treasure Hunt</h2>        
+                
+                 <article class="activities" id="swap_article_2">
+                    <header class="mainhead">
+                        <img style="margin-left: 1em;" align="right" src="img/fyf.png" />
+                        <h3>URBAN ADVENTURERS</h3>
+                        <h4>Ideas and inspiration to help you <Strong>#FindYourFun</Strong></h4>
+                        
+                    </header>
+                    <section>
+                        <a target="_blank" href="http://wwt.org.uk" class="right" onClick="customLinkTracking('hub_crocs-4-wetland-center','e')">
+                            <img src="img/fyf-1-6.jpg" />
+                            <div>
+                                <h3 style="color: #992585;">London Wetland Centre</h3>
+                                <h4>Family tickets start from £33.27, children under four go free</h4>
+                                <p>Explore an urban oasis on the doorstep of the capital at the London Wetland Centre. Wander through the meadows and gardens and keep a keen eye on your surroundings, because who knows what wildlife you’re likely to stumble across? Home to otters, herons and many more British creatures, the Wetland Centre is the ideal destination for a wild and beautiful day out.  </p>
+                                
+                                <div class="cta" style="background-color: #992585;">Find out more</div>
+                            </div>
+                        </a>
+                    </section>
+                    <section>
+                        <a target="_blank" href="http://survivalschoolbristol.co.uk
+" class="left" onClick="customLinkTracking('hub_crocs-5-survival-school','e')">
+                            <img src="img/fyf-2-6.jpg" />
+                            <div>
+                                <h3 style="color: #0090d4;">Survival School</h3>
+                                <h4>Prices vary depending on course</h4>
+                                <p>Inject some fun into a trip to the woods with the Survival School, Bristol. Unite as a family and learn the art of bushcraft, or sign up to a serious survival course for a day or even a weekend. Specialist instructors are on hand to ensure every participant receives an element of private tuition to equip them with the skills needed to survive in the wilderness.  </p>
+                                <div class="cta" style="background-color: #0090d4;">Find out more</div>
+                            </div>
+                        </a>
+                    </section>
+                    <section>
+                        <a target="_blank" href="http://mylorboathire.co.uk" class="right" onClick="customLinkTracking('hub_crocs-6-boat-hire','e')">
+                            <img src="img/fyf-3-6.jpg" />
+                                <div>
+                                <h3 style="color: #ec6707;">Explore Falmouth by boat</h3>
+                                    <h4>Boats available for hire from £30 an hour, open times vary throughout the year</h4>
+                                <p>Cornwall is synonymous with the sea, so what better way to explore it than by boat? From sail boats to motor boats, you and your family can explore the beautiful sheltered waters around Falmouth. Discover tiny villages, waterside pubs and secret places ideal for picnics. Babies and dogs are welcome aboard and full safety information and instructions are provided. </p>
+                                <div class="cta" style="background-color: #ec6707;">Find out more</div>
+                            </div>
+                        </a>
+                    </section>                    
+                </article>
+                
+
+                <aside class="steps">
+                    <h3><span style="font-weight: bold; text-transform: none; letter-spacing: 0.1px; font-family: 'Varela Round',sans-serif;"> #FindYourFun</span><br/><span>AND EXPLORE YOUR CITY WITH THE </span>CROCS<span> DISCOVERY TRAIL</span></h3>
+                        <section class="item left">
+                            <img align="left" src="img/steps-1.png" />
+                            <div>
+                                <h3>Step 1</h3>
+                                <p><strong>Download the free Geotourist app on Apple iPhone or Google Android.</strong></p>
+                                <img src="img/geotourist.png" style="width:50%;height:auto;"/>
+                                <p>Start the app and look for the crocs trails in the city closest to you. Tap to select your preferred trail and simply press <Strong>“START”</Strong> on the selected trail summary page to reveal the map of the location of the points. You can also use the <Strong>“Route me to starting point”</Strong> on the summary page to be navigated to the beginning of the trail.</p>
+                              <a href="https://itunes.apple.com/ua/app/geotourist/id948290494?mt=8" target="_blank" onClick="customLinkTracking('hub_crocs-7-downloadapp_apple','e')"><img class="store first" src="img/apple-store.png" /></a>
+                                <a href="https://play.google.com/store/apps/details?id=com.mlsdev.geotourist" target="_blank" onClick="customLinkTracking('hub_crocs-8-downloadapp_google','e')"><img class="store" src="img/google-store.png" /></a>   
+                                
+                            </div>
+                        </section>  
+                        <section class="item right">
+                            <img align="right" src="img/steps-2.png" />
+                            <div>
+                                <h3>Step 2</h3>
+                                <p><strong>Follow the clues around your city and answer the quiz questions for each location.</strong></p>
+                                <p>Walk to each numbered point on the map and you will be able to listen out for clues about the location around – then, a quiz question will pop up for you to answer. Answer each question correctly and move on to the next location. Each time you walk into a new point, the location audio will be triggered and then the quiz question will pop up on the screen for you to answer.</p>
+                            </div>
+                        </section>       
+                        <section class="item left">
+                            <img style="margin-top:10px; margin-bottom: 15px;" align="left" src="img/steps-3.png" />
+                            <div>
+                                <h3>Step 3</h3>
+                                <p><strong>Win a Crocs medal! Complete at least one city trail to become a Crocs Champion!</strong></p>
+                                <p>Share your success with your friends on Facebook at the end of every trail!</p>
+                                <p>Complete your first trail and then why not try out another Crocs #FindYourFun trail - there are 6 to choose from!</p>
+                            </div>
+                        </section>  
+                    <p style="text-align:center;display:block;font-size:1em;"><a style="color:#000000;" target="_blank" href="terms_holiday.html" onClick="customLinkTracking('hub_crocs-9-geotourist_terms','e')">View terms and conditions</a></p>
+                     <h3>Guides available in</h3>
+                    <ul>
+                        <li>London</li>
+                        <li>Manchester</li>
+                        <li>Birmingham</li>
+                    </ul>
+                </aside>
+
+            </div> <!-- #main -->
+        </div> <!-- #main-container -->
+        
+
+
+        
+        
+        <div class="main-container blue-box">  
+            <div class="main wrapper clearfix">
+                <h2 id="social_feed">Social Feed</h2>
+              <!--   <script src="https://display.engagesciences.com/ui/ngx.embed.min.js"></script>
+                <iframe src="https://display.engagesciences.com/display/container/dc/615f62d3-9d14-45dd-a2ad-08abc2522bff" frameborder="0" scrolling="no" width="100%" id="ngxFrame49615" allowTransparency="true"></iframe> -->
+                
+               <blockquote class="twitter-tweet" data-lang="en-gb"><p lang="en" dir="ltr">Sometimes you just have to forget all your worries and remember to <a href="https://twitter.com/hashtag/FindYourFun?src=hash">#FindYourFun</a> <a href="https://t.co/FadBYlMf36">https://t.co/FadBYlMf36</a> <a href="https://t.co/xg0WpxBYn0">pic.twitter.com/xg0WpxBYn0</a></p>&mdash; Crocs UK (@Crocs_UK) <a href="https://twitter.com/Crocs_UK/status/725297534307065861">27 April 2016</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+                
+                <blockquote class="twitter-tweet" data-lang="en-gb"><p lang="en" dir="ltr">Always enjoying the heights <a href="https://twitter.com/hashtag/FindYourFun?src=hash">#FindYourFun</a> <a href="https://twitter.com/hashtag/FanFav?src=hash">#FanFav</a> <a href="https://t.co/e9HZIsu1b6">pic.twitter.com/e9HZIsu1b6</a></p>&mdash; Crocs UK (@Crocs_UK) <a href="https://twitter.com/Crocs_UK/status/717396402083655680">5 April 2016</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+                
+            </div> <!-- #main -->
+         </div> <!-- #main-container -->        
+        
+        
+        <div class="footer-container">
+            <footer class="wrapper">
+               
+                <h3>Join the <span>#FindYourFun</span> conversation on:</h3>
+                    <div class="contain">
+                        <a href="https://www.facebook.com/Crocs/" onClick="customLinkTracking('hub_crocs-11-social-fb','e')"><img src="img/share-fb.png" /><p>Facebook</p></a>
+                        <a target="_blank" href="http://twitter.com/Crocs_UK" onClick="customLinkTracking('hub_crocs-12-social-tw','e')"><img src="img/share-tw.png" /><p>Twitter</p></a>
+                        <a href="https://www.instagram.com/crocseu/" target="_blank" onClick="customLinkTracking('hub_crocs-13-social-is','e')"><img src="img/share-ig.png" /><p>Instagram</p></a>
+                    </div>
+                <img class="footer-logo" src="img/crocs_logo.png" />
+            </footer>
+        </div>
+        
+    <footer class="mol_footer">
+      <div class="inner">
+        <div class="bg"></div>
+            <p>&copy; 2015 Associated Newspapers Ltd.</p>
+            <iframe src="http://www.dailymail.co.uk/home/index.html?footeronly=true&decorator=footeronly" width="964" height="220" frameborder="0" scrolling="no" allowtransparency="yes"></iframe>
+      </div>
+    </footer>
+        <img src="http://bcp.crwdcntrl.net/5/c=991/b=30264861" width="1" height="1"/>
+        <IMG SRC="https://ad.doubleclick.net/ddm/trackimp/N5573.280686.MAILONLINE/B9517594.131707904;dc_trk_aid=304359563;dc_trk_cid=70602078;ord=[timestamp];dc_lat=;dc_rdid=;tag_for_child_directed_treatment=?" BORDER="0" HEIGHT="1" WIDTH="1" ALT="Advertisement">
+
+
+    <!--    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>-->
+        
+        <script src="js/main-changeover.js"></script>
+
+        
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+        </script>
+    </body>
+</html>
